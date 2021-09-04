@@ -1,0 +1,11 @@
+apiVersion: minecraft.kk.io/v1
+kind: Server
+metadata:
+  name: server-sample
+spec:
+  # Add fields here
+  EULA: true
+  serverName: "kk server"
+  ops: ["kk"]
+  allowList: ["kk"]
+  serverType: "VANILLA"

@@ -1,0 +1,16 @@
+domain: kk.io
+layout:
+- go.kubebuilder.io/v3
+projectName: kinecraft
+repo: github.com/kirankothule/kinecraft
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: kk.io
+  group: minecraft
+  kind: Server
+  path: github.com/kirankothule/kinecraft/api/v1
+  version: v1
+version: "3"

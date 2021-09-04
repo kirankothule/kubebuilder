@@ -1,0 +1,20 @@
+# permissions for end users to view servers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: server-viewer-role
+rules:
+- apiGroups:
+  - minecraft.kk.io
+  resources:
+  - servers
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - minecraft.kk.io
+  resources:
+  - servers/status
+  verbs:
+  - get
